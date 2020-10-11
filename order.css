@@ -2,6 +2,9 @@
   background-color: black;
   text-align: center;
 }
+.container{
+  justify-content: center;
+}
 .header__social li{
   list-style: none;
 }
@@ -47,6 +50,8 @@
   color: gray;
   font-size: large;
   text-decoration: none;
+  font-family: "metropolis-medium", sans-serif;
+  font-weight: bold;
 }
 .header__nav-wrap ul li a:hover{
   color: white;
