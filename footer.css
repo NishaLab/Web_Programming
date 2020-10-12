@@ -1,0 +1,57 @@
+
+footer {
+  background: #212121;
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+.list-unstyled{
+  border-top: solid 1px;
+  border-color: #303032;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+footer input{
+  height: 3.4rem;
+  background-color: #151515;
+  color: white;
+  border: none;
+  border-color: transparent;
+  border-radius: 0 3px 3px 0;
+}
+#email{
+  border-radius: 3px 3px 3px 3px;
+}
+#email::placeholder{
+  color: rgb(118, 118, 118);
+}
+#subcribe{
+  position: absolute;
+  background-color: #0054a5;
+  font-size: 1 rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}

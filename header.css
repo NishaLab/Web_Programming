@@ -1,9 +1,14 @@
 .header{
-  background-color: black;
+  background-color: #212121;
   text-align: center;
+  padding-top: 30px;
 }
 .container{
   justify-content: center;
+}
+
+.header__social {
+  justify-content: space-between;
 }
 .header__social li{
   list-style: none;
@@ -12,7 +17,7 @@
   color: white;
 }
 .header__search input{
-  background-color: black;
+  background-color: #212121;
   color: white;
   border: none;
   border-color: transparent;
@@ -25,9 +30,9 @@
 ::placeholder {
   color: white;
   border: none;
-  text-align: center;
+  text-align: left;
 }
-.header__search li i{
+.header__search i{
   color: white;
 }
 .header__nav-wrap{
@@ -47,12 +52,18 @@
   list-style: none;
 }
 .header__nav-wrap ul li a{
-  color: gray;
+  color:rgb(118, 118, 118);
   font-size: large;
   text-decoration: none;
-  font-family: "metropolis-medium", sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
 }
 .header__nav-wrap ul li a:hover{
   color: white;
+}
+
+.mainfooter{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
