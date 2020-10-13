@@ -52,7 +52,7 @@
   list-style: none;
 }
 .header__nav-wrap ul li a{
-  color:rgb(118, 118, 118);
+  color: gray;
   font-size: large;
   text-decoration: none;
   font-family: sans-serif;
@@ -61,9 +61,11 @@
 .header__nav-wrap ul li a:hover{
   color: white;
 }
-
+body{
+  height: 100%;
+}
 .mainfooter{
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  height: auto;
+  margin-top: 100px;
 }
