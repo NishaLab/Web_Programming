@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="header.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="order.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="status_bar.css" />
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -107,7 +109,7 @@
               <a class="nav-link" href="#">Liên Hệ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Đơn Hàng</a>
+              <a class="nav-link" href="/order.html">Đơn Hàng</a>
             </li>
           </ul>
         </nav>
@@ -182,6 +184,44 @@
                       >Mã đơn hàng:
                       <span style="font-weight: bold">121213</span></span
                     >
+                  </div>
+                </div>
+              </div>
+              <div class="stepper">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-12">
+                      <ul id="progressbar" class="text-center">
+                          <li class="active step0"></li>
+                          <li class="active step0"></li>
+                          <li class="active step0"></li>
+                          <li class="step0"></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="row justify-content-around top">
+                  <div class="row d-flex icon-content">
+                    <i class = "fa fa-recycle fa-2x"></i>
+                      <div class="d-flex flex-column">
+                          <p class="font-weight-bold">Chờ<br>Xử lý</p>
+                      </div>
+                  </div>
+                  <div class="row d-flex icon-content">
+                    <i class ="fa fa-bookmark fa-2x" style="padding-left: 130px;"></i>
+                      <div class="d-flex flex-column">
+                          <p class="font-weight-bold">Chờ <br> Lấy hàng</p>
+                      </div>
+                  </div>
+                  <div class="row d-flex icon-content"> 
+                    <i class ="fa fa-truck fa-2x"></i>
+                      <div class="d-flex flex-column">
+                          <p class="font-weight-bold">Đang giao</p>
+                      </div>
+                  </div>
+                  <div class="row d-flex icon-content" style="padding-right: 30px;">
+                    <i class ="fa fa-star fa-2x"></i>
+                      <div class="d-flex flex-column">
+                          <p class="font-weight-bold">Đã giao</p>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -307,6 +347,9 @@
                   <div class="order-detail-payment__item__value col col-md-4">
                     Thanh toán khi nhận hàng
                   </div>
+                </div>
+                <div class="order-cancel">
+                  <button type="button" class="btn btn-danger p-bt" style="float: right">Hủy đơn hàng</button>
                 </div>
               </div>
             </div>
