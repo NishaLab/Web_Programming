@@ -6,11 +6,28 @@
 .content{
   margin-top: 60px;
 }
-.side__items{
-  margin-top: 10px;
-  margin-left: 100px;
-  margin-bottom: 10px;
+
+.side__item{
+  list-style: none;
+  padding: 10px 0px 10px 40px;
 }
-.side__items a{
+.side__item a{
   color: #212121;
+}
+.side__item a:hover{
+  text-decoration: none;
+}
+.side__avatar{
+ padding: 0px 0px 0px 0px;
+ margin: 0px;
+}
+
+.content__price__original{
+  padding-top: 30px;
+}
+.content__item{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #212121;
 }
