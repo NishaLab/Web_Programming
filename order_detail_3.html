@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Order | Lập trình mạng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="header.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="order.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="order_detail.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row social">
+          <div class="row header__social col-md-2 d-flex">
+            <li>
+              <a href="#">
+                <i class="fa fa-facebook fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-twitter fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-instagram fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-pinterest fa-2x"></i>
+              </a>
+            </li>
+          </div>
+          <div class="header__logo col-md-8 d-flex justify-content-center">
+            <a href="#">
+              <image src="/img/header/logo.svg"></image>
+            </a>
+          </div>
+          <div class="header__search col-md-2 d-flex">
+            <div class="div">
+              <input type="text" placeholder="Search" style="width: 80%" />
+              <i class="fa fa-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container nav">
+        <nav class="header__nav-wrap">
+          <ul class="header__nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trang chủ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">Thể Loại</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liên Hệ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Đơn Hàng</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="content">
+      <div class="container">
+        <div class="row content">
+          <div class="content__side col col-md-3" style="padding-top: 20px">
+            <div class="media">
+              <img
+                class="mr-3"
+                src="img/content/profile.png"
+                alt="Generic placeholder image"
+                width="80px"
+                height="80px"
+                style="border-radius: 50%"
+              />
+              <div class="media-body">
+                <h6 class="mt-0">Hưng Nguyễn</h6>
+                <p style="font-size: 15px; color: #777">
+                  <i class="fa fa-pencil"></i> <span>Sửa thông tin</span>
+                </p>
+              </div>
+            </div>
+            <div class="side__items__detail">
+              <ul class="side__items">
+                <li class="side__item">
+                  <a href="#">
+                    <i class="fa fa-address-book"> </i>
+                    <span>Tài khoản của tôi</span>
+                  </a>
+                </li>
+                <li class="side__item">
+                  <a href="#">
+                    <i class="fa fa-shopping-cart"> </i>
+                    <span>Đơn hàng</span>
+                  </a>
+                </li>
+                <li class="side__item">
+                  <a href="#">
+                    <i class="fa fa-bell"> </i>
+                    <span>Thông báo</span>
+                  </a>
+                </li>
+                <li class="side__item">
+                  <a href="#">
+                    <i class="fa fa-money"> </i>
+                    <span>Voucher giảm giá</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="content__main col col-md-9">
+            <div
+              class="order-detail-header container"
+              style="border-top: solid 1px #212121"
+            >
+              <div class="row">
+                <div class="order-detail-back col col-md-6">
+                  <i class="fa fa-chevron-left"></i>
+                  <a href="/order.html">
+                    <button style="border: none; background-color: white">
+                      Trở lại
+                    </button>
+                  </a>
+                </div>
+                <div class="order-detail-note col col-md-6">
+                  <div style="float: right">
+                    <span class="order-detail-note-sn"
+                      >Mã đơn hàng:
+                      <span style="font-weight: bold">121212</span></span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Horizontal Steppers -->
+            </div>
+            <div class="order-detail-address__container">
+              <div class="order-detail-address__title">Địa chỉ nhận hàng</div>
+              <div class="order-detail-address__content">
+                <div class="order-detail-address__content__customer">
+                  <div class="order-detail-address__content__customer__name">
+                    Nguyễn Đức Hưng
+                  </div>
+                  <div class="order-detail-address__content__customer__phone">
+                    (+84) 963063105
+                  </div>
+                </div>
+                <div class="order-detail-address__content__address">
+                  Xóm 2 Xuân Dục, Xã Yên Thường, Huyện Gia Lâm, Hà Nội
+                  <a href="#" style="font-size: 1.25rem"> sửa </a>
+                </div>
+              </div>
+            </div>
+            <div class="order-detail-cotent__container">
+              <div class="content__item">
+                <div class="row">
+                  <div class="col col-md-9">
+                    <div class="media">
+                      <img class="content__image" src="img/content/hitler.jpg" alt="Generic placeholder image" width="120px" height="120px" />
+                      <div class="media-body">
+                        <h5>Adoft Hitler: Into the third Reich</h5>
+                        <p>
+                          <span style="font-size: 13">Cung cấp bởi </span>
+                          <a href="#"> Philosophy Trading</a>
+                        </p>
+                        <p>
+                          <span style="font-size: 13">Thể loại: </span>
+                          <a href="#">Tiểu thuyết </a>
+                        </p>
+                        <p>
+                          <span style="font-size: 13">Số lượng: 2 </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-md-3" style="text-align: center">
+                    <div class="content__price__original">
+                      <p style="text-decoration: line-through; color: gray">₫50.000</p>
+                    </div>
+                    <div class="content__price__primary">
+                      <p>₫40.000</p>
+                    </div>
+                    <div class="content__price__total">
+                      <i class="fa fa-money" style="color: red">
+                        <span style="color: #212121">
+                          <span style="font-weight: bold">₫80.000</span>
+                        </span>
+                      </i>
+                    </div>
+                  </div>
+                </div>
+                <div class="content__price">
+                  <p style="text-align: right; font-weight: bold">
+                    Tổng tiền:
+                    <span style="font-size: 1.875rem; color: red; padding-left: 30px"><sup>₫</sup>80.000</span>
+                  </p>
+                </div>
+              </div>
+              <div class="order-detail-payment">
+                <div class="order-detail-payment__item row">
+                  <div
+                    class="order-detail-payment__item__description col col-md-8"
+                  >
+                    Tổng tiền hàng
+                  </div>
+                  <div class="order-detail-payment__item__value col col-md-4">
+                    <sup>₫</sup>80.000
+                  </div>
+                </div>
+                <div class="order-detail-payment__item row">
+                  <div
+                    class="order-detail-payment__item__description col col-md-8"
+                  >
+                    Phí vận chuyển
+                  </div>
+                  <div class="order-detail-payment__item__value col col-md-4">
+                    <sup>₫</sup>20.000
+                  </div>
+                </div>
+                <div class="order-detail-payment__item row">
+                  <div
+                    class="order-detail-payment__item__description col col-md-8"
+                  >
+                    Miễn phí vận chuyển
+                  </div>
+                  <div class="order-detail-payment__item__value col col-md-4">
+                    <sup>₫</sup>-20.000
+                  </div>
+                </div>
+                <div class="order-detail-payment__item row">
+                  <div
+                    class="order-detail-payment__item__description col col-md-8"
+                  >
+                    Tổng số tiền
+                  </div>
+                  <div
+                    class="order-detail-payment__item__value col col-md-4"
+                    style="
+                      color: red;
+                      font-size: 2rem;
+                      line-height: 2.125rem;
+                      font-weight: bold;
+                    "
+                  >
+                    <sup>₫</sup>80.000
+                  </div>
+                </div>
+                <div class="order-detail-payment__type row">
+                  <div
+                    class="order-detail-payment__item__description col col-md-8"
+                  >
+                    <i class= "fa fa-truck fa-lg" style="color: red;" ></i> Phương thức thanh toán
+                  </div>
+                  <div class="order-detail-payment__item__value col col-md-4">
+                    Thanh toán khi nhận hàng
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="mainfooter" role="contentinfo">
+      <div class="container footer-middle">
+        <div class="row">
+          <div class="row col-md-6">
+            <!--Column1-->
+            <div class="footer-pad col-md-4">
+              <b>Liên kết nhanh</b>
+              <ul class="list-unstyled">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Đơn hàng</a></li>
+              </ul>
+            </div>
+            <div class="footer-pad col-md-4">
+              <b>Thể loại</b>
+              <ul class="list-unstyled">
+                <li><a href="#">Đời sống</a></li>
+                <li><a href="#">Sức khoẻ</a></li>
+                <li><a href="#">Tiểu thuyết</a></li>
+                <li><a href="#">Self-help</a></li>
+                <li><a href="#">Tự truyện</a></li>
+                <li><a href="#">Sách khoa học</a></li>
+              </ul>
+            </div>
+            <div class="footer-pad col-md-4">
+              <b>Mạng xã hội</b>
+              <ul class="list-unstyled">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Pinterest</a></li>
+                <li>
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 d-flex justify-content-center">
+            <ul>
+              <h4>Follow Us</h4>
+              <p>
+                Hàng tháng Philosophy đều có những dịch vụ và sản phẩm mới ra
+                mắt nhằm phục vụ khách hàng tốt hơn. Để có thể cập nhật kịp thời
+                những thông tin này, vui lòng nhập địa chỉ email của bạn vào ô
+                dưới đây.
+              </p>
+              <div class="footer-subscribe">
+                <form id="footer-form" class="group">
+                  <input type="email" id="email" placeholder="Email Address" />
+                  <input type="submit" id="subcribe" value="SEND" />
+                </form>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 copy">
+            <p class="text-center">
+              &copy; Copyright 2018 - Philosophy Bookstore. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
