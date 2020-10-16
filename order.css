@@ -27,7 +27,27 @@
 }
 .content__item{
   margin-top: 10px;
+  padding-top: 10px;
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: solid 1px #212121;
+}
+.order-detail-payment__item{
+  justify-content: flex-end;
+  text-align: end;
+}
+.order-detail-payment__item__description{
+  padding: 0.8125rem 0.625rem 0.8125rem 0.625rem;
+  border-right: dotted 1px gray;
+  border-bottom: dotted 1px gray;
+}
+.order-detail-payment__item__value{
+  padding: 0.8125rem 0.625rem 0.8125rem 0.625rem;
+  border-bottom: dotted 1px gray;
+}
+.order-detail-payment__type{
+  border-top: solid 1px black;
+  margin-top: 20px;
+  justify-content: flex-end;
+  text-align: end;
 }
